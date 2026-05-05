@@ -14,3 +14,14 @@ console.log("BEFORE:", localStorage.getItem("entries"));
   entries.reverse().forEach(entry => {
     const row = document.createElement('div');
     row.classList.add('entry-row');
+
+ row.innerHTML = `
+      <h2>${entry.title}</h2>
+      <p>${entry.content}</p>
+      <small>${entry.date}</small>
+    `;
+
+    container.appendChild(row);
+  });
+
+});

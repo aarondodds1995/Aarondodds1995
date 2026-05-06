@@ -26,3 +26,7 @@ JSON.parse(localStorage.getItem('entries'))
 The array is limited to the 5 most recent entries using:
 entries.slice(0, 5)
 A loop dynamically creates and inserts entry cards into the grid. his ensures only the newest entries are shown
+
+
+Reference
+MDN Web Docs – localStorage: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
